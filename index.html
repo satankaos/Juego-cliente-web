@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Diplomata+SC" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Cantata+One:regular:latin'>
+    <title>Pasapalabra SkyLab Coder</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Pasapalabra</h1>
+        </header>
+        <!-- /header -->
+        <article>
+            <!-- Show letter-->
+            <div id='warped'>
+                <span class='w0'>A</span><span class='w1'>B</span><span class='w2'>C</span><span
+                    class='w3'>D</span><span class='w4'>E</span><span class='w5'>F</span><span class='w6'>G</span><span
+                    class='w7'>H</span><span class='w8'>I</span><span class='w9'>J</span><span class='w10'>K</span><span
+                    class='w11'>L</span><span class='w12'>M</span><span class='w13'>N</span><span
+                    class='w14'>Ñ</span><span class='w15'>O</span><span class='w16'>P</span><span
+                    class='w17'>Q</span><span class='w18'>R</span><span class='w19'>S</span><span
+                    class='w20'>T</span><span class='w21'>U</span><span class='w22'>V</span><span
+                    class='w23'>W</span><span class='w24'>X</span><span class='w25'>Y</span><span class='w26'>Z</span>
+            </div>
+            <!-- Fin bloque letter-->
+            <!-- bloque preguntas -->
+            <div id="question">
+                <button id="playnow" class="myButton" onclick="playAgain()" style="visibility: hidden;">Jugar otra
+                    vez</button>
+                <button id="theEnd" class="myButton" onclick="endGame()" style="visibility: hidden;">Terminar
+                    Juego?</button>
+                <h3 id="pregunta">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</h3>
+            </div>
+            <!-- fin bloque preguntas -->
+            <!-- Realizamos el panel de control del juego -->
+            <div class="controlpanel">
+                <h3 aling="center">
+                    <p id="message">Dale a jugar para comenzar</p>
+                    <h3 aling="center">
+                        <p id="temp" style="visibility: hidden;">Tiempo restante:</p><span id="seconds">300</span>
+                    </h3>
+                    <button id="jugar" class="myButton" onclick="jugar(this)">Jugar</button>
+                    <input id="respuesta" autocomplete="off" placeholder="write you answer" ;
+                        style="visibility: hidden;">
+                    <button id="sendAnswer" class="myButton" onclick="checkAnswer()"
+                        style="visibility: hidden;">Enviar</button>
+                    <button id="pasaPalabra" class="myButton" onclick="pasarPalabra()"
+                        style="visibility: hidden;">Pasapalabra</button>
+            </div>
+            <!-- Fin bloque panel de control -->
+
+            <!-- bloque puntos -->
+            <div id="puntos">
+                <h3>Total aciertos: <span id="pointsShow">0</span></h3>
+                <button id="exit" class="myButton" onclick="playAgain()" style="visibility: hidden;">Reiniciar</button>
+            </div>
+            <!-- fin bloque puntos -->
+            <!-- Fin bloque boxGame -->
+    </div>
+
+    </article>
+
+    </div>
+    <!-- Fin bloque container -->
+    <script language="javascript" type="text/javascript" src="js/app.js"></script>
+    <!-- 	<script language="javascript" type="text/javascript" src="js/crono.js"></script> -->
+</body>
+
+</html>
